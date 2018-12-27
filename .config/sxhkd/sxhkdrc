@@ -12,7 +12,7 @@ super + shift + Return
 
 # web browser
 super + b
-	/opt/firefox/firefox
+	/usr/bin/firefox-nightly
 
 # program launcher
 super + r
