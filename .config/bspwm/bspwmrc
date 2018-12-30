@@ -32,3 +32,5 @@ else
 	"$BSPWM_CONFIG/autostart" &
 	# "$HOME/.scripts/toggle-gaps.sh" gaps &
 fi
+
+. "$HOME/.config/lemonbar/bar.sh"

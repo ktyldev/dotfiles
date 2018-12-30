@@ -4,5 +4,5 @@ wal -R &                                        # set wallpaper & theme
 # start-pulseaudio-x11 &                          # make audio work
 # compton --config $HOME/.config/compton.conf &   # start compositor
 redshift -l 51.5:0 &                            # make our eyes less strained
-. "$HOME/.config/lemonbar/bar.sh" &             # useful system info
+# . "$HOME/.config/lemonbar/bar.sh" &             # useful system info
 # . "$HOME/.config/dunst/launch.sh" &             # useful notifications
