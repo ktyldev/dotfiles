@@ -2,9 +2,21 @@
 
 # TODO:
 #
-# colours
 # workspace 
 # current window 
+
+# import colours from pywal
+. "$HOME/.cache/wal/colors.sh"
+fg="$color8"
+bg="$color0"
+
+set_colours() {
+  echo -n "%{F$fg}%{B$bg}"
+}
+
+set_inverse_colours() {
+  echo -n "%{F$bg}%{B$fg}"
+}
 
 battery() {
   echo -n $(acpi -b) | cut -d, -f3 | awk '{$1=$1;print}' | gawk -F ":" '{print$1":"$2}'
@@ -21,6 +33,6 @@ while true; do
     break
   fi
 
-  echo -n "%{r}$(battery) $(clock) "
+  echo -n "$(set_colours) %{r}$(battery) $(clock) "
   sleep 1;
 done
