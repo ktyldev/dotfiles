@@ -1,3 +1,3 @@
 #!/usr/bin/bash
 
-scrot screen.png
+scrot "$HOME/screen.png"
