@@ -1,11 +1,5 @@
 #!/usr/bin/bash
 
-# TODO:
-#
-# workspace 
-# current window 
-# volume
-
 # import colours from pywal
 . "$HOME/.cache/wal/colors.sh"
 fg="$color8"
