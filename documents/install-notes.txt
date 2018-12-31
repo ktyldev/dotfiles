@@ -1,0 +1,49 @@
+# prerequisites: vim, networkmanager, git
+
+# edit locale
+loadkeys uk
+# edit locale.gen, uncomment gb locales
+locale-gen
+echo "LANG=en_GB.UTF-8" > /etc/locale.conf
+echo "KEYMAP=uk" > /etc/vconsole.conf
+
+# start network
+systemctl enable NetworkManager
+systemctl start NetworkManager
+
+# connect to wifi
+nmtui
+
+# create user
+useradd -m momo
+passwd momo
+visudo
+
+# logout, switch to created user
+
+set up dotfiles repo
+
+# get dots
+dotdir="$HOME/.cfg"
+mkdir $dotdir
+git init --bare $dotdir
+# first time config on dotfiles repo
+cfg="git --git-dir=$dotdir --work-tree=$HOME"
+$cfg config --local status.showUntrackedFiles no
+# set the remote
+remote="https://github.com/monodokimes/dotfiles"
+$cfg remote add origin $remote
+# download latest version
+$cfg pull origin master
+
+# set up neovim
+sudo pip install neovim
+
+# set up neovim plugins
+curl -fLo "$HOME/.local/share/nvim/site/autoload/plug.vim" --create-dirs "https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+:UpdateRemotePlugins
+:PlugInstall
+
+# do ricy stuff
+cursor theme: breeze snow
+

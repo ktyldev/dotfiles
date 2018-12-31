@@ -1,0 +1,62 @@
+# official repos
+
+## x server
+
+xorg xorg-apps xorg-xinit xterm
+
+## wm
+
+bspwm sxhkd
+
+## terminal
+
+termite?
+
+## shell
+
+zsh zsh-syntax-highlighting
+
+## utils
+
+ranger feh ranger redshift scrot rofi w3m xcape ncdu htop 
+
+## sound
+
+alsa-utils pulseaudio-alsa
+
+## rice
+
+neofetch cmatrix python-pywal lxappearance
+
+## dev
+
+python python-pip go
+
+## fonts
+
+tamsyn-font ttf-liberation ttf-dejavu adobe-source-han-sans-jp-fonts
+
+## hardware management
+
+acpi
+
+# aur
+
+get yay
+
+firefox-nightly 
+libc++ (install manually to avoid tests) 
+  makepkg -Acs --nocheck --skippgpcheck
+discord
+lemonbar-xft-git
+
+# other
+
+todolist
+go get github.com/gammons/todolist
+
+## oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
+## philososhark
+git clone https://github.com/monodokimes/philososhark
