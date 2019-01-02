@@ -4,7 +4,7 @@
 . "$HOME/.cache/wal/colors.sh"
 foreground="$color8"
 background="$color0"
-update=0.1
+update=0.2
 
 set_colours() {
   echo -n "%{F$foreground}%{B$background}"
@@ -39,6 +39,18 @@ bspwm() {
   done
 }
 
+xwindow() {
+  title=$(xdotool getactivewindow getwindowname)
+  maxlength=60
+
+  size=${#title}
+  if [ $size -gt $maxlength ]; then
+    title="${title:0:$maxlength}..."
+  fi
+
+  echo -n $title
+}
+
 while true; do
   # kill process once x is no longer running
   if ! pgrep -x "Xorg" > /dev/null 
@@ -46,6 +58,6 @@ while true; do
     break
   fi
 
-  echo -n "%{l} $(bspwm) %{r}$(battery) $(clock) "
+  echo -n "%{l} $(bspwm) $(xwindow) %{r}$(battery) $(clock) "
   sleep $update;
 done

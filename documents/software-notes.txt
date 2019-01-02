@@ -18,7 +18,7 @@ zsh zsh-syntax-highlighting
 
 ## utils
 
-ranger feh ranger redshift scrot rofi w3m xcape ncdu htop 
+ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool
 
 ## sound
 
