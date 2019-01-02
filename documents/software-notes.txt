@@ -8,9 +8,9 @@ xorg xorg-apps xorg-xinit xterm
 
 bspwm sxhkd
 
-## terminal
+## terminals
 
-termite?
+termite rxvt-unicode
 
 ## shell
 
