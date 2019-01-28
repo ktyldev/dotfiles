@@ -18,7 +18,7 @@ zsh zsh-syntax-highlighting
 
 ## utils
 
-ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool
+ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool zip
 
 ## sound
 
@@ -34,11 +34,15 @@ python python-pip go
 
 ## fonts
 
-tamsyn-font ttf-liberation ttf-dejavu adobe-source-han-sans-jp-fonts
+tamsyn-font ttf-liberation ttf-dejavu adobe-source-han-sans-jp-fonts noto-fonts-emoji noto-fonts-cjk
 
 ## hardware management
 
 acpi
+
+## security
+
+bitwarden
 
 # aur
 
@@ -49,6 +53,7 @@ libc++ (install manually to avoid tests)
   makepkg -Acs --nocheck --skippgpcheck
 discord
 lemonbar-xft-git
+ttf-symbola 
 
 # other
 
