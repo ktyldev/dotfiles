@@ -24,7 +24,4 @@ alias todo=todolist
 alias :q=exit
 alias :wq=exit
 
-# set colours asynchronously
-(cat ~/.cache/wal/sequences &)
-
 /usr/local/bin/philososhark
