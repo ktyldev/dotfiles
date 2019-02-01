@@ -1,9 +1,13 @@
-export ZSH=$HOME/.oh-my-zsh
-export GOPATH=$HOME/projects/go
-export PATH=$PATH:$GOPATH/bin
-export PATH=$PATH:$HOME/.scripts
-export EDITOR=/usr/bin/nvim
+export SCRIPTS=$HOME/.scripts
 export CONFIG=$HOME/.config
+
+export GOPATH=$HOME/projects/go
+
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$SCRIPTS
+
+export EDITOR=/usr/bin/nvim
+export ZSH=$HOME/.oh-my-zsh
 
 ZSH_THEME="sunaku"
 
