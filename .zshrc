@@ -3,6 +3,7 @@ export GOPATH=$HOME/projects/go
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.scripts
 export EDITOR=/usr/bin/nvim
+export CONFIG=$HOME/.config
 
 ZSH_THEME="sunaku"
 
