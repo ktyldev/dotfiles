@@ -51,6 +51,16 @@ xwindow() {
   echo -n $title
 }
 
+volume() {
+  vol=$(amixer get Master \
+    | grep % \
+    | awk '{print $5}' \
+    | sed 's/[^0-9]//g' \
+    | head -n 1)
+
+  echo -n $vol
+}
+
 while true; do
   # kill process once x is no longer running
   if ! pgrep -x "Xorg" > /dev/null 
@@ -58,6 +68,6 @@ while true; do
     break
   fi
 
-  echo -n "%{l} $(bspwm) $(xwindow) %{r}$(battery) $(clock) "
+  echo -n "%{l} $(bspwm) $(xwindow) %{r}$(battery) $(volume) $(clock) "
   sleep $update;
 done
