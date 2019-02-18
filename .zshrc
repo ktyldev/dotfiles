@@ -4,6 +4,7 @@ export CONFIG=$HOME/.config
 export GOPATH=$HOME/projects/go
 
 export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$SCRIPTS
 
 export EDITOR=/usr/bin/nvim

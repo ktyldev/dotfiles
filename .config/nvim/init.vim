@@ -30,6 +30,8 @@ Plug 'ncm2/ncm2-bufword'
 Plug 'ncm2/ncm2-go'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'nsf/gocode', { 'rtp': 'nvim' }
+" Rust
+Plug 'rust-lang/rust.vim'
 
 " Distraction-free writing
 Plug 'junegunn/goyo.vim'
