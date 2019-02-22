@@ -64,8 +64,8 @@ vnoremap <silent> <C-c> y:call ClipboardYank()<cr>
 vnoremap <silent> <C-x> d:call ClipboardYank()<cr>
 
 " parentheses handling
-inoremap { {}<Esc>i<CR><Esc>O<Tab>
-inoremap [ []<Esc>i
-inoremap ( ()<Esc>i
+" inoremap { {}<Esc>i<CR><Esc>O<Tab>
+" inoremap [ []<Esc>i
+" inoremap ( ()<Esc>i
 
 colo desert
