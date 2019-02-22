@@ -4,9 +4,9 @@ set relativenumber
 set expandtab
 set nowrap
 
-set tabstop=2
-set shiftwidth=2
-set softtabstop=2
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
 
 filetype plugin on
 
@@ -53,15 +53,19 @@ inoremap <expr> <A-k> pumvisible() ? "\<C-p>" : "\<A-k>"
 noremap <expr> <A-j> "\<C-e>"
 noremap <expr> <A-k> "\<C-y>"
 
+" copy to system clipboard
 function! ClipboardYank()
   call system('xclip -i -selection clipboard', @@)
 endfunction
 function! ClipboardPaste()
   let @@ = system('xclip -o -selection clipboard')
 endfunction
-
 vnoremap <silent> <C-c> y:call ClipboardYank()<cr>
 vnoremap <silent> <C-x> d:call ClipboardYank()<cr>
-nnoremap <silent> <C-V> :call ClipboardPaste()<cr>p
+
+" parentheses handling
+inoremap { {}<Esc>i<CR><Esc>O<Tab>
+inoremap [ []<Esc>i
+inoremap ( ()<Esc>i
 
 colo desert
