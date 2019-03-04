@@ -26,7 +26,7 @@ alsa-utils pulseaudio-alsa
 
 ## rice
 
-neofetch cmatrix python-pywal lxappearance
+neofetch cmatrix python-pywal lxappearance compton
 
 ## dev
 
