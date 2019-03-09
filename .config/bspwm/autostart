@@ -2,7 +2,7 @@
 sxhkd &                                         # enable keybinds
 wal -R &                                        # set wallpaper & theme
 # start-pulseaudio-x11 &                        # make audio work
-compton                                         # start compositor
+compton --config "$HOME/.config/compton/config" # start compositor
 redshift -l 53:0 &                              # make our eyes less strained
 # . "$HOME/.config/lemonbar/bar.sh" &           # useful system info
 # . "$HOME/.config/dunst/launch.sh" &           # useful notifications

@@ -2,3 +2,4 @@ xcursor.theme: breeze-snow
 
 urxvt.font: xft:misc tamsyn:6x12
 urxvt.scrollBar: false
+urxvt.depth: 32

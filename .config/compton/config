@@ -1,0 +1,4 @@
+opacity-rule: [
+    "98:class_g =   'URxvt' && focused",
+    "95:class_g =   'URxvt' && !focused"
+];
