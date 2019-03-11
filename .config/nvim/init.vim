@@ -53,6 +53,9 @@ inoremap <expr> <A-k> pumvisible() ? "\<C-p>" : "\<A-k>"
 noremap <expr> <A-j> "\<C-e>"
 noremap <expr> <A-k> "\<C-y>"
 
+noremap J 10j
+noremap K 10k
+
 " copy to system clipboard
 function! ClipboardYank()
   call system('xclip -i -selection clipboard', @@)
