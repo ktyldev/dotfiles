@@ -54,6 +54,7 @@ libc++ (install manually to avoid tests)
 discord
 lemonbar-xft-git
 ttf-symbola 
+apvlv
 
 # other
 
