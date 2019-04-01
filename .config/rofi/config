@@ -1,0 +1,9 @@
+rofi.theme:           ~/.cache/wal/colors-rofi-dark.rasi
+
+rofi.modi:            window,run,ssh
+rofi.font:            Misc Tamsyn 12
+rofi.separator-style: none
+rofi.auto-select:     false
+rofi.lines:           1
+rofi.width:           25
+rofi.hide-scrollbar:  true
