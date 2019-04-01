@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 
-urxvt -cr green
+exec urxvt -cr green &> /dev/null

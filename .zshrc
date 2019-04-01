@@ -25,6 +25,7 @@ alias f=fff
 alias fr="dict -d eng-fra"
 alias o=xdg-open
 alias sv="sudo $EDITOR"
+alias t="$SCRIPTS/term.sh &"
 alias td=todolist
 alias v=$EDITOR
 alias vi=$EDITOR
