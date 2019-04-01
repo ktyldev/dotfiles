@@ -23,6 +23,7 @@ alias cfg="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias en="dict -d fra-eng"
 alias f=fff
 alias fr="dict -d eng-fra"
+alias key="$SCRIPTS/sshkey.sh"
 alias o=xdg-open
 alias sv="sudo $EDITOR"
 alias t="$SCRIPTS/term.sh &"
