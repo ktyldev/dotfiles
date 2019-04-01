@@ -19,12 +19,14 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-alias vi=nvim
-alias v=nvim
-alias sv='sudo nvim'
 alias cfg="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias f=fff
+alias o=xdg-open
+alias sv="sudo $EDITOR"
+alias td=todolist
+alias v=$EDITOR
+alias vi=$EDITOR
 alias weather='curl -s "wttr.in/~London?0"'
-alias todo=todolist
 
 # you're not in Vim ya dummy
 alias :q=exit
