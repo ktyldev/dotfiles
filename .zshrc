@@ -20,7 +20,9 @@ source $ZSH/oh-my-zsh.sh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 alias cfg="/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
+alias en="dict -d fra-eng"
 alias f=fff
+alias fr="dict -d eng-fra"
 alias o=xdg-open
 alias sv="sudo $EDITOR"
 alias td=todolist

@@ -10,7 +10,7 @@ bspwm sxhkd
 
 ## terminals
 
-termite rxvt-unicode
+rxvt-unicode
 
 ## shell
 
@@ -18,7 +18,7 @@ zsh zsh-syntax-highlighting
 
 ## utils
 
-ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool zip
+ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool zip fff
 
 ## sound
 
@@ -44,6 +44,10 @@ acpi
 
 bitwarden
 
+## translation
+
+dictd
+
 # aur
 
 get yay
@@ -55,6 +59,8 @@ discord
 lemonbar-xft-git
 ttf-symbola 
 apvlv
+dict-freedict-eng-fra
+dict-freedict-fra-eng
 
 # other
 
