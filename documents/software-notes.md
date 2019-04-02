@@ -18,7 +18,7 @@ zsh zsh-syntax-highlighting
 
 ## utils
 
-ranger feh ranger redshift scrot rofi w3m xcape ncdu htop xdotool zip fff
+ranger feh redshift scrot spectacle rofi w3m xcape ncdu htop xdotool zip fff
 
 ## sound
 
@@ -62,13 +62,15 @@ apvlv
 dict-freedict-eng-fra
 dict-freedict-fra-eng
 
+
 # other
 
 todolist
-go get github.com/gammons/todolist
+go get github.com/ultralist/ultralist
 
 ## oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 ## philososhark
 git clone https://github.com/monodokimes/philososhark
+
